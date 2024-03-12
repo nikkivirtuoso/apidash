@@ -88,7 +88,7 @@ class DartDioCodeGen {
       }
     }
     final responseExp = declareFinal('response').assign(InvokeExpression.newOf(
-      refer('dio.Dio'),
+      refer('dio'),
       [literalString(url)],
       {
         if (queryParamExp != null) 'queryParameters': refer('queryParams'),
